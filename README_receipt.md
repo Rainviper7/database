@@ -25,7 +25,7 @@
 | guest   | number  | จำนวนลูกค้า  
 
 ### openTime
- | Name | Type | Description
+| Name | Type | Description
 | ----|----|-----------
 | openTime  | datetime | เวลาเปิดร้าน
 
