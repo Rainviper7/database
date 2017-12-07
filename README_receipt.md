@@ -8,12 +8,27 @@
 | customerId | string | accountที่ใช้งาน          
 | posId  | string  | เครื่องposที่ใช้งาน   
 | hqId | string  | id ของ accountสาขาแม่
-| datetime | object_ref| วันที่เวลาทำการบันทึก
-| shift| object_ref | กะ/เวณ ที่เข้าทำงาน
+| datetime | datetime | วันที่เวลาทำการบันทึก
+| shift| string | กะ/เวณ ที่เข้าทำงาน
 | user | string | ชื่อพนักงานที่ใช้งานอยู่        
 | note | string| บันทึกเพิ่มเติม
 | billId | string| เลขที่บิล 
 | isDeleted  | boolean| สถานะการลบรายการ
 | deleteRemark | boolean| สถานะการลบบันทึกเพิ่มเติม 
 | table | string| หมายเลขโต๊ะ
+
+### customer
+| Name | Type | Description
+| ----|----|-----------
+| guest   | number  | จำนวนลูกค้า   
+| openTime  | datetime | เวลาเปิดร้าน          
+| items | array of | สินค้า '#/components/schemas/baseItem'          
+| tags  | object| แท็ก
+     
+### from custommer
+> tags 
+| Name | Type | Description
+| ----|----|-----------       
+| name | boolean | สถานะชื่อ
+
           
