@@ -27,8 +27,23 @@
      
 ### from custommer
 > tags 
+
 | Name | Type | Description
 | ----|----|-----------       
 | name | boolean | สถานะชื่อ
+
+### baseItem
+| Name | Type | Description
+| ----|----|-----------  
+uuid | string   | รหัสสินค้า    
+name | string| ชื่อสินค้า
+qty | number| จำนวนสินค้า
+unitPrice| number | n/a
+extendedPrice | number | n/a
+discount | number| ส่วนลด
+discountedPrice| number| ส่วนลด
+comment | string| คอมเม้น
+toppings | array of | ออฟชั่นเพิ่มเติมของอาหาร '#/components/schemas/topping'
+          
 
           
