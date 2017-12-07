@@ -36,3 +36,13 @@ discount | number| ส่วนลด
 discountedPrice| number| ส่วนลด
 comment | string| คอมเม้น
 toppings | array of | ออฟชั่นเพิ่มเติมของอาหาร '#/components/schemas/topping'
+
+### topping
+| Name | Type | Description
+| ----|----|-----------  
+uuid | string   | รหัสสินค้า
+qty | number| จำนวนสินค้า
+unitPrice | number| n/a
+extendedPrice | number| n/a
+discount | number| ส่วนลด
+discountedPrice| number| ส่วนลด
