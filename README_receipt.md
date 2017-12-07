@@ -17,16 +17,30 @@
 | deleteRemark | boolean| สถานะการลบบันทึกเพิ่มเติม 
 | table | string| หมายเลขโต๊ะ
 
-### customer
+## customer
+
+### guest
 | Name | Type | Description
 | ----|----|-----------
-| guest   | number  | จำนวนลูกค้า   
-| openTime  | datetime | เวลาเปิดร้าน          
-| items | array of | สินค้า '#/components/schemas/baseItem'          
+| guest   | number  | จำนวนลูกค้า  
+
+### openTime
+ | Name | Type | Description
+| ----|----|-----------
+| openTime  | datetime | เวลาเปิดร้าน
+
+### items
+| Name | Type | Description
+| ----|----|-----------       
+| items | array of | สินค้า '#/components/schemas/baseItem' 
+
+### tags
+| Name | Type | Description
+| ----|----|-----------         
 | tags  | object| แท็ก
      
-### from custommer
-> tags 
+#### tags
+>tags
 
 | Name | Type | Description
 | ----|----|-----------       
@@ -44,6 +58,16 @@ discount | number| ส่วนลด
 discountedPrice| number| ส่วนลด
 comment | string| คอมเม้น
 toppings | array of | ออฟชั่นเพิ่มเติมของอาหาร '#/components/schemas/topping'
-          
 
-          
+ ## money all decimal
+
+ ### subTotal
+| Name | Type | Description
+| ----|----|-----------  
+subTotal | number | ราคาสินค้าจริง ยังไม่ลดตัวสินค้า
+
+### discountItems
+| Name | Type | Description
+| ----|----|-----------  
+discountItems | number  |  ลดราคาสินค้า
+               
