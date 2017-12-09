@@ -83,7 +83,7 @@ uuid | string | รหัส
 computeMode | number | `0 = on subTotal,  1 = on totalAfterItemDiscounted,2 = on accumulation`
 mode | number|   0 input,   1 amount
 modeValue | number | ค่าของmode 10percent   or   10 baht.
-amount | number | '#/components/schemas/amount'
+[amount](README_receipt.md#reference) | number | ...
 
 ### member
 | Name | Type | Description
