@@ -111,16 +111,6 @@ note | string| บันทึกเพิ่มเติม
 toKitchen | boolean | send job to printer     
 device | string| เครื่องที่ใช้ในการสั่ง
 
-### employee
-| Name | Type | Description
-|employee| object | ลูกจ้างที่กดสั่ง
- > properties
-
-| Name | Type | Description
-| ----|----|-----------        
-name | string| ชื่อลูกจ้าง
-id | string| รหัสลูกจ้าง
-
 | Name | Type | Description
 | ----|----|-----------      
 items | object | เมนู
@@ -129,6 +119,16 @@ items | object | เมนู
 | Name | Type | Description
 | ----|----|-----------  
 [node](README_receipt.md#items) | object | ...
+
+### employee
+| Name | Type | Description
+| employee | object | ลูกจ้างที่กดสั่ง
+ > properties
+
+| Name | Type | Description
+| ----|----|-----------        
+name | string| ชื่อลูกจ้าง
+id | string| รหัสลูกจ้าง
 
 ### infoRoot
  | Name | Type | Description
