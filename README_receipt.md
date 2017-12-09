@@ -24,7 +24,7 @@
 | isDeleted  | boolean | สถานะการลบรายการ
 | deleteRemark | boolean| สถานะการลบบันทึกเพิ่มเติม 
 | table | string| หมายเลขโต๊ะ
-| [addOn](README_receipt.md#addon) | Object| ...
+| [addOn](README_receipt.md#addon) | object | ...
 
 ### customer
 | Name | Type | Description
