@@ -1,6 +1,8 @@
 # Niceloop_receipt
 > receipt bill in niceloop pos
 
+`* = required`
+
 ### receipt 
 
 | Name | Type | Description
@@ -81,7 +83,11 @@ jobs | array object | 'jobId1 , jobId2 ,jobId3 , ...'
 customerId |  object | '#/components/schemas/customerId'
 timestamp |  object | '#/components/schemas/timestamp'
 note | string| บันทึกเพิ่มเติม
-table | object | '#/components/schemas/table'
+table | object | '#/components/schemas/table' 
+toKitchen | boolean | send job to printer     
+device | string| เครื่องที่ใช้ในการสั่ง
+
+| Name | Type | Description
 employee| object | ลูกจ้างที่กดสั่ง
  > properties
 
@@ -89,11 +95,6 @@ employee| object | ลูกจ้างที่กดสั่ง
 | ----|----|-----------        
 name | string| ชื่อลูกจ้าง
 id | string| รหัสลูกจ้าง
-
-| Name | Type | Description
-| ----|----|-----------  
-toKitchen | boolean | send job to printer     
-device | string| เครื่องที่ใช้ในการสั่ง  
 
 | Name | Type | Description
 | ----|----|-----------      
@@ -116,13 +117,13 @@ infoRoot | object |   '{   "A1" :  {*info object *}    }'
 table |  object | '#/components/schemas/table'
 info |  object | '#/components/schemas/infoObject'
              
-### InfoObject  Real time database
+### InfoObject
 | Name | Type | Description
 | ----|----|----------- 
  infoObject| object | ...
 > properties
 
- | Name | Type | Description
+| Name | Type | Description
 | ----|----|-----------  
 isLock | boolean |  โตีะถูกล็อกมั้ย     
 guest | number| จำนวนลูกค้า          
@@ -131,21 +132,21 @@ comment | array object |  " ['string', ...]"
 ### member
  | Name | Type | Description
 | ----|----|----------- 
-member | object
+member | object | ...
 > properties
 
 | Name | Type | Description
 | ----|----|-----------  
 id\* | string |  id สมาชิก             
 name | string |  ชื่อสมาชิก             
-openTime | string|  เวลาเปิด??
+openTime | string |  เวลาเปิด??
 noOfPrintPreview | number |  จำนวนสั่งปริ้นพรีวิว
 addOn | array object |  ส่วนเพิ่มเติม '#/components/schemas/addOn'   
 
  ### vat_obj                 
 | Name | Type | Description
 | ----|----|-----------             
-vat_obj| object|  ภาษี  
+vat_obj| object |  ภาษี  
 > properties
 
 | Name | Type | Description
@@ -170,15 +171,15 @@ cashierMode | string | '0= cashier, 1= termial, 2= 2nd cashier'
 ### VoidItems
 | Name | Type | Description
 | ----|----|----------- 
-    voidItems| object |  VoidItems   Firestore
+voidItems| object |  VoidItems   Firestore
 > properties
 
 | Name | Type | Description
 | ----|----|----------- 
-id| string |  firebase store auto gen    
+id\* | string |  firebase store auto gen    
 businessDay |  object | '#/components/schemas/businessDay'
 customerId |  object | '#/components/schemas/customerId'
-uuid | string    | item uuid
+uuid | string | item uuid
 datetime | object | '#/components/schemas/datetime'
 name | string |  ชื่อสินค้า
 qty | number |  จำนวนสินค้า
@@ -187,10 +188,10 @@ table |  object | '#/components/schemas/table'
 reason | string |  คอมเม้นท์
         
           
-### Acticity   Firestore
+### Acticity
 | Name | Type | Description
 | ----|----|----------- 
-acticity| object
+acticity | object | Acticity   Firestore
 > properties
 
 | Name | Type | Description
@@ -236,7 +237,7 @@ amount | object | '#/components/schemas/amount'
 remark | string |  คอมเม้นต์
                 
 
-## Referrence
+## Reference
 | Name | Type | Description
 | ----|----|----------- 
 employeeObj | object
@@ -300,14 +301,20 @@ mode | number|   0 input,   1 amount
 modeValue | number | ค่าของmode 10percent   or   10 baht.
 amount | number | '#/components/schemas/amount'
 
-
+| Name | Type | Description
+| ----|----|-----------  
 discountAll1 | array object  | ส่วนลดทั้งบิล '#/components/schemas/discountAll'
 discountAll2 | array object  | ส่วนลดทั้งบิล2 '#/components/schemas/discountAll'
 
+| Name | Type | Description
+| ----|----|-----------  
 discountAll | object| ส่วนลดทั้งบิล   
 > properties|
-        name | string | ชื่อส่วนลด          
-        amount |  object | '#/components/schemas/amount'
-        mode | number | โหมดส่วนลด  0 = ลดเป็นเปอเซ็นต์,   1 = discount amount          
-        modeValue | number | 'ค่าที่ต้องการทำส่วน mode|0 =10%, mode|1  =10 บาท'
+
+| Name | Type | Description
+| ----|----|-----------  
+name | string | ชื่อส่วนลด          
+amount |  object | '#/components/schemas/amount'
+mode | number | โหมดส่วนลด  0 = ลดเป็นเปอเซ็นต์,   1 = discount amount          
+modeValue | number | 'ค่าที่ต้องการทำส่วน mode|0 =10%, mode|1  =10 บาท'
             
