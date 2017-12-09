@@ -105,7 +105,6 @@ items | object |เมนู
 | ----|----|-----------  
 node |  object| '#/components/schemas/items'
 
-
 ### infoRoot
  | Name | Type | Description
 | ----|----|-----------  
@@ -301,6 +300,7 @@ mode | number|   0 input,   1 amount
 modeValue | number | ค่าของmode 10percent   or   10 baht.
 amount | number | '#/components/schemas/amount'
 
+### discount
 | Name | Type | Description
 | ----|----|-----------  
 discountAll1 | array object  | ส่วนลดทั้งบิล '#/components/schemas/discountAll'
@@ -309,7 +309,7 @@ discountAll2 | array object  | ส่วนลดทั้งบิล2 '#/compo
 | Name | Type | Description
 | ----|----|-----------  
 discountAll | object| ส่วนลดทั้งบิล   
-> properties|
+> properties
 
 | Name | Type | Description
 | ----|----|-----------  
