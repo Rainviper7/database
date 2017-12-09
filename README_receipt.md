@@ -32,12 +32,12 @@
 | guest   | number  | จำนวนลูกค้า  
 | openTime  | datetime | เวลาเปิดร้าน    
 
-###items
+### items
 | Name | Type | Description
 | ----|----|-----------
 | [items](README_receipt.md#baseitem) | array object | สินค้า 
 
-###tags
+### tags
 | Name | Type | Description
 | ----|----|-----------
 | tags  | object| แท็ก 
@@ -59,7 +59,7 @@ rounding | number| rounding
 afterRounding | number| after rounding      
 cost | number  | ต้นทุน
 
- ### payment
+### payment
 | Name | Type | Description
 | ----|----|-----------       
 payment | array object | รายการชำระเงิน
@@ -113,7 +113,7 @@ device | string| เครื่องที่ใช้ในการสั่
 
 ### employee
 | Name | Type | Description
-employee| object | ลูกจ้างที่กดสั่ง
+|employee| object | ลูกจ้างที่กดสั่ง
  > properties
 
 | Name | Type | Description
@@ -275,7 +275,7 @@ amount | number | 1500, -1500 ใส่เลข ลบถ้าหักออ�
       
 | Name | Type | Description
 | ----|----|----------- 
-employeeObj | object
+employeeObj | object | ...
 > properties
 
 | Name | Type | Description
@@ -330,7 +330,7 @@ discountAll | object| ส่วนลดทั้งบิล
 | Name | Type | Description
 | ----|----|-----------  
 name | string | ชื่อส่วนลด          
-[amount](README_receipt.md#discountall)|  object | ...
+[amount](README_receipt.md#reference)|  object | ...
 mode | number | โหมดส่วนลด  0 = ลดเป็นเปอเซ็นต์,   1 = discount amount          
 modeValue | number | 'ค่าที่ต้องการทำส่วน mode|0 =10%, mode|1  =10 บาท'
             
