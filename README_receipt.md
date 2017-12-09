@@ -127,11 +127,11 @@ items | object | เมนู
 
 | Name | Type | Description
 | ----|----|-----------        
-name | string| ชื่อลูกจ้าง
-id | string| รหัสลูกจ้าง
+name | string | ชื่อลูกจ้าง
+id | string | รหัสลูกจ้าง
 
 ### infoRoot
- | Name | Type | Description
+| Name | Type | Description
 | ----|----|-----------  
 infoRoot | object |   '{   "A1" :  {*info object *}    }'
  > properties
@@ -220,8 +220,8 @@ acticity | object | Acticity   Firestore
 
 | Name | Type | Description
 | ----|----|----------- 
-[[timestamp](README_receipt.md#reference) | object | ...
-table](README_receipt.md#reference) |  object | ...
+[timestamp](README_receipt.md#reference) | object | ...
+[table](README_receipt.md#reference) |  object | ...
 type | string  |  ประเภทงาน
 message | string |  ข้อความ          
 ref | string |  'for reference to _id for job'
@@ -246,7 +246,7 @@ start | number |  เงินที่ใส่ในลิ้นชัก
 pos | number |  ยอดขายจากระบบ  cash only
 posEnding | number |  เงิน A
 actualEnding | number |  เงิน B
-diff | number |    'ส่วนต่างเงินในลิ้นชัก  A-B    |  ถ้าบวก เงินในระบบ เยอะกว่านับจริง  (เงินในลิ้นชักหาย) |  ถ้าลบ   เงินในลิ้นชักเยอะกว่าที่คำนวนได้ในระบบ ( เงินได้รับเกิน)'
+diff | number |    'ส่วนต่างเงินในลิ้นชัก  A-B      ถ้าบวก เงินในระบบ เยอะกว่านับจริง  (เงินในลิ้นชักหาย)   ถ้าลบ   เงินในลิ้นชักเยอะกว่าที่คำนวนได้ในระบบ ( เงินได้รับเกิน)'
     
 | Name | Type | Description
 | ----|----|-----------    
@@ -332,5 +332,5 @@ discountAll | object| ส่วนลดทั้งบิล
 name | string | ชื่อส่วนลด          
 [amount](README_receipt.md#reference)|  object | ...
 mode | number | โหมดส่วนลด  0 = ลดเป็นเปอเซ็นต์,   1 = discount amount          
-modeValue | number | 'ค่าที่ต้องการทำส่วน mode|0 =10%, mode|1  =10 บาท'
+modeValue | number | 'ค่าที่ต้องการทำส่วน mode 0 =10%, mode 1  =10 บาท'
             
