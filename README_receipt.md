@@ -30,7 +30,7 @@
 | ----|----|-----------
 | guest   | number  | จำนวนลูกค้า  
 | openTime  | datetime | เวลาเปิดร้าน    
-| items | array object | สินค้า '#/components/schemas/baseItem' 
+| [items](docs/README_receipt.md#baseItem) | array object | สินค้า 
 | subTotal | number | ราคาสินค้าจริง ยังไม่ลดตัวสินค้า 
 | discountItems | number  |  ลดราคาสินค้า
 beforeVat | number| ราคาก่อนคิดภาษี      
