@@ -73,11 +73,12 @@ note | string| บันทึกเพิ่มเติม
 table | [{object}](receipt.md#reference) | ...
 toKitchen | boolean | send job to printer     
 device | string| เครื่องที่ใช้ในการสั่ง
+items | [{object}](receipt.md#items) | item menu
 
 ### items
 | Name | Type | Description
 | ----|----|-----------  
-node | [{object}](receipt.md#receipt) | item menu
+node | [array object](receipt.md#item)  | item menu
 
 ### employee
 | Name | Type | Description
@@ -97,7 +98,7 @@ info | [{object}] (receipt.md#infoobject) | ...
 isLock | boolean |  โตีะถูกล็อกมั้ย     
 guest | number| จำนวนลูกค้า          
 comment | array of string |  " ['string', ...]"
-member | [{object}](receipt.md#member)|        
+member | [{object}](receipt.md#member)| ลูกค้าสมาชิก        
 openTime | string |  เวลาเปิด??
 noOfPrintPreview | number |  จำนวนสั่งปริ้นพรีวิว
 addOn | [array object] (receipt.md#addon) |  ส่วนเพิ่มเติม
@@ -114,7 +115,7 @@ modeValue | string |  ค่า
 shift| [{object}](receipt.md#reference)  | ...
 businessDay | [{object}](receipt.md#reference) | ...
 currentIdBill | string | idบิลปัจจุบัน
-currentEmployee |  [{object}](receipt.md#reference) | ' people from WIN'
+currentEmployee | [{object}](receipt.md#employeeobj) | ' people from WIN'
 cashierMode | string | '0= cashier, 1= termial, 2= 2nd cashier'
 
 ### VoidItems
@@ -173,7 +174,7 @@ timestamp | string | เวลาลงบันทึก
 table | string | โต๊ะลูกค้า
 businessDay | string | วัน???  
 datetime| string | วันที่เวลาทำการบันทึก
-shift | string | กะ/เวณ ที่เข้าทำงาน
+shift | string | กะ/เวร ที่เข้าทำงาน
 amount | number | 1500, -1500 ใส่เลข ลบถ้าหักออก
       
 ### employeeObj
