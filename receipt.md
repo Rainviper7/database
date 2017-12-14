@@ -21,26 +21,26 @@
 | addOn | [{object}](README_receipt.md#addon) | ...
 | guest   | number  | จำนวนลูกค้า  
 | openTime  | datetime | เวลาเปิดร้าน    
-| [items](README_receipt.md#baseitem) | array object | สินค้า 
+| items | [array object](README_receipt.md#baseitem) | สินค้า 
 | subTotal | number | ราคาสินค้าจริง ยังไม่ลดตัวสินค้า 
 | discountItems | number  |  ลดราคาสินค้า
-beforeVat | number| ราคาก่อนคิดภาษี      
-vat | number | ค่าภาษี      
-grandTotal  | number| ยอดสุทธิ     
-rounding | number| rounding     
-afterRounding | number| after rounding      
-cost | number  | ต้นทุน
+|beforeVat | number| ราคาก่อนคิดภาษี      
+|vat | number | ค่าภาษี      
+|grandTotal  | number| ยอดสุทธิ     
+|rounding | number| rounding     
+|afterRounding | number| after rounding      
+|cost | number  | ต้นทุน
 
 ### payment
 | Name | Type | Description
 | ----|----|-----------     
 name | string | ประเภทการชำระเงิน
-[amount](README_receipt.md#reference) | number | ...
+amount| [number](README_receipt.md#reference) | ...
 
 ### tags
 | Name | Type | Description
 | ----|----|----------- 
-| name | boolean | สถานะชื่อ 
+| name | boolean | สถานะชื่อ #type   =  obj : { <$name> : true }
 
 ###  addOn 
 | Name | Type | Description
@@ -50,7 +50,7 @@ uuid | string | รหัส
 computeMode | number | `0 = on subTotal,  1 = on totalAfterItemDiscounted,2 = on accumulation`
 mode | number|   0 input,   1 amount
 modeValue | number | ค่าของmode 10percent   or   10 baht.
-[amount](README_receipt.md#reference) | number | ...
+amount | [number](README_receipt.md#reference) | ...
 
 ### member
 | Name | Type | Description
@@ -66,22 +66,17 @@ jobs | array object | 'jobId1 , jobId2 ,jobId3 , ...'
 ### job
 | Name | Type | Description
 | ----|----|-----------   
-[customerId](README_receipt.md#reference) |  {object} | ...
-[timestamp](README_receipt.md#reference) |  {object} | ...
+customerId | [{object}](README_receipt.md#reference) | ...
+timestamp | [{object}](README_receipt.md#reference) | ...
 note | string| บันทึกเพิ่มเติม
-[table](README_receipt.md#reference) | {object} | ...
+table | [{object}](README_receipt.md#reference) | ...
 toKitchen | boolean | send job to printer     
 device | string| เครื่องที่ใช้ในการสั่ง
 
-### item node
-| Name | Type | Description
-| ----|----|-----------      
-items | object | เมนู
- > properties
-
+### items node***
 | Name | Type | Description
 | ----|----|-----------  
-[node](README_receipt.md#items) | {object} | ...
+node | [{object}](README_receipt.md#items) | ...
 
 ### employee
 | Name | Type | Description
@@ -92,20 +87,15 @@ id | string | รหัสลูกจ้าง
 ### infoRoot
 | Name | Type | Description
 | ----|----|-----------  
-infoRoot | {object} |   '{   "A1" :  {*info object *}    }'
- > properties
-
-| Name | Type | Description
-| ----|----|-----------  
-[table](README_receipt.md#reference) |  {object} | ...
-[info](README_receipt.md#infoobject) |  {object} | ...
+table | [{object}](README_receipt.md#reference) | ...
+info | [{object}] (README_receipt.md#infoobject) | ...
              
 ### InfoObject
 | Name | Type | Description
 | ----|----|-----------  
 isLock | boolean |  โตีะถูกล็อกมั้ย     
 guest | number| จำนวนลูกค้า          
-comment | array {object} |  " ['string', ...]"
+comment | array of string |  " ['string', ...]"
 
 ### member2
  | Name | Type | Description
@@ -114,59 +104,56 @@ id\* | string |  id สมาชิก
 name | string |  ชื่อสมาชิก             
 openTime | string |  เวลาเปิด??
 noOfPrintPreview | number |  จำนวนสั่งปริ้นพรีวิว
-[addOn](README_receipt.md#addon) | array object |  ส่วนเพิ่มเติม
+addOn | [array object] (README_receipt.md#addon) |  ส่วนเพิ่มเติม
 
- ### vat_obj                 
+### vat_obj                 
 | Name | Type | Description
 | ----|----|-----------   
-mode  | string |  โหมด
-modeValue  | string |  ค่า
+mode | string |  โหมด
+modeValue | string |  ค่า
              
 ### RunningMode 
-
 | Name | Type | Description
 | ----|----|-----------  
-[shift](README_receipt.md#reference) | {object} | ...
-[businessDay](README_receipt.md#reference) | {object} | ...
+shift| [{object}](README_receipt.md#reference)  | ...
+businessDay | [{object}](README_receipt.md#reference) | ...
 currentIdBill | string | idบิลปัจจุบัน
-[currentEmployee](README_receipt.md#reference) |  {object} | ' people from WIN'
+currentEmployee |  [{object}](README_receipt.md#reference) | ' people from WIN'
 cashierMode | string | '0= cashier, 1= termial, 2= 2nd cashier'
 
 ### VoidItems
 | Name | Type | Description
 | ----|----|----------- 
 id\* | string |  firebase store auto gen    
-[businessDay](README_receipt.md#reference) |  {object} | ...
-[customerId](README_receipt.md#reference) |  {object} | ...
+businessDay | [{object}](README_receipt.md#reference) | ...
+customerId | [{object}](README_receipt.md#reference) | ...
 uuid | string | item uuid
-[datetime](README_receipt.md#reference) | {object} | ...
-name | string |  ชื่อสินค้า
-qty | number |  จำนวนสินค้า
+datetime | [{object}](README_receipt.md#reference) | ...
+name | string | ชื่อสินค้า
+qty | number | จำนวนสินค้า
 price | number |  ราคาสินค้า
-[table](README_receipt.md#reference) |  {object} | ...
+table | [{object}] (README_receipt.md#reference) | ...
 reason | string |  คอมเม้นท์
-        
-          
+             
 ### Acticity
 | Name | Type | Description
 | ----|----|----------- 
-[timestamp](README_receipt.md#reference) | {object} | ...
-[table](README_receipt.md#reference) |  {object} | ...
-type | string  |  ประเภทงาน
+timestamp | [{object}] (README_receipt.md#reference) | ...
+table | [{object}] (README_receipt.md#reference) | ...
+type | string |  ประเภทงาน
 message | string |  ข้อความ          
 ref | string |  'for reference to _id for job'
-[customerId](README_receipt.md#reference) | {object} | ...
+customerId | [{object}] (README_receipt.md#reference) | ...
 action | number | 'codeInt ex. 200 = add, 300 = move'          
-[amount](README_receipt.md#reference) |  {object} | ...
+amount | [{object}] (README_receipt.md#reference) | ...
 employeeName | string |  ชื่อลูกจ้าง          
 employeeId | string |  รหัสลูกจ้าง
-          
-          
+                   
 ### DrawerLogs
 | Name | Type | Description
 | ----|----|----------- 
-[customerId](README_receipt.md#reference) | {object} | ...
-[businessDay](README_receipt.md#reference)| {object} | ...
+customerId | [{object}] (README_receipt.md#reference)| ...
+businessDay | [{object}] (README_receipt.md#reference) | ...
 start | number |  เงินที่ใส่ในลิ้นชัก
 pos | number |  ยอดขายจากระบบ  cash only
 posEnding | number |  เงิน A
@@ -175,17 +162,16 @@ diff | number |    'ส่วนต่างเงินในลิ้นชั
     
 | Name | Type | Description
 | ----|----|-----------    
-withdraw | array {object} |  '...'
+withdraw | array [{object}] |  '...'
 > properties
 
 | Name | Type | Description
 | ----|----|----------- 
 type | string |  'add | withdraw'               
-[timestamp](README_receipt.md#reference) |  {object} | ...
-[amount](README_receipt.md#reference) | {object} | ...
+timestamp | [{object}](README_receipt.md#reference) | ...
+amount | [{object}](README_receipt.md#reference) | ...
 remark | string |  คอมเม้นต์
                 
-
 ## Reference
 | Name | Type | Description
 | ----|----|-----------           
@@ -213,7 +199,7 @@ extendedPrice | number | n/a
 discount | number | ส่วนลด
 discountedPrice | number| ส่วนลด
 comment | string | คอมเม้น
-[toppings](README_receipt.md#topping) | array object | ออฟชั่นเพิ่มเติมของอาหาร
+toppings | [array object](README_receipt.md#topping) | ออฟชั่นเพิ่มเติมของอาหาร
 
 ### topping
 | Name | Type | Description
@@ -224,17 +210,3 @@ unitPrice | number | n/a
 extendedPrice | number| n/a
 discount | number | ส่วนลด
 discountedPrice | number | ส่วนลด
-
-### discount
-| Name | Type | Description
-| ----|----|-----------  
-[discountAll1](README_receipt.md#discountall) | array object | ส่วนลดทั้งบิล
-[discountAll2](README_receipt.md#discountall) | array object | ส่วนลดทั้งบิล2
-
-### discountAll
-| Name | Type | Description
-| ----|----|-----------  
-name | string | ชื่อส่วนลด          
-[amount](README_receipt.md#reference)|  object | ...
-mode | number | โหมดส่วนลด  0 = ลดเป็นเปอเซ็นต์,   1 = discount amount          
-modeValue | number | 'ค่าที่ต้องการทำส่วน mode 0 =10%, mode 1  =10 บาท'
