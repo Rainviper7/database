@@ -21,7 +21,7 @@
 | addOn | [{object}](receipt.md#addon) | ...
 | guest   | number  | จำนวนลูกค้า  
 | openTime  | datetime | เวลาเปิดร้าน    
-| items | [array object](receipt.md#baseitem) | สินค้า 
+| items | [array object](receipt.md#item) | สินค้า 
 | subTotal | number | ราคาสินค้าจริง ยังไม่ลดตัวสินค้า 
 | discountItems | number  |  ลดราคาสินค้า
 |beforeVat | number| ราคาก่อนคิดภาษี      
@@ -42,7 +42,7 @@ amount| [number](receipt.md#reference) | ...
 | ----|----|----------- 
 | name | boolean | สถานะชื่อ #type   =  obj : { <$name> : true }
 
-###  addOn 
+### addOn 
 | Name | Type | Description
 | ----|----|-----------  
 name\* | string | ชื่อสมมนาคุณ
@@ -55,13 +55,14 @@ amount | [number](receipt.md#reference) | ...
 ### member
 | Name | Type | Description
 | ----|----|-----------    
-memberId\*  | string| idของสมาชิก
+memberId\* | string | idของสมาชิก
+name | string |  ชื่อสมาชิก   
 point | number | แต้มสะสม
 
 ### jobs
 | Name | Type | Description
 | ----|----|-----------    
-jobs | array object | 'jobId1 , jobId2 ,jobId3 , ...'
+jobs | array of string | 'jobId1 , jobId2 ,jobId3 , ...'
 
 ### job
 | Name | Type | Description
@@ -73,10 +74,10 @@ table | [{object}](receipt.md#reference) | ...
 toKitchen | boolean | send job to printer     
 device | string| เครื่องที่ใช้ในการสั่ง
 
-### items node***
+### items
 | Name | Type | Description
 | ----|----|-----------  
-node | [{object}](receipt.md#items) | ...
+node | [{object}](receipt.md#receipt) | item menu
 
 ### employee
 | Name | Type | Description
@@ -96,12 +97,7 @@ info | [{object}] (receipt.md#infoobject) | ...
 isLock | boolean |  โตีะถูกล็อกมั้ย     
 guest | number| จำนวนลูกค้า          
 comment | array of string |  " ['string', ...]"
-
-### member2
- | Name | Type | Description
-| ----|----|-----------  
-id\* | string |  id สมาชิก             
-name | string |  ชื่อสมาชิก             
+member | [{object}](receipt.md#member)|        
 openTime | string |  เวลาเปิด??
 noOfPrintPreview | number |  จำนวนสั่งปริ้นพรีวิว
 addOn | [array object] (receipt.md#addon) |  ส่วนเพิ่มเติม
@@ -138,14 +134,14 @@ reason | string |  คอมเม้นท์
 ### Acticity
 | Name | Type | Description
 | ----|----|----------- 
-timestamp | [{object}] (receipt.md#reference) | ...
-table | [{object}] (receipt.md#reference) | ...
+timestamp | [string] (receipt.md#reference) | ...
+table | [string] (receipt.md#reference) | ...
 type | string |  ประเภทงาน
 message | string |  ข้อความ          
 ref | string |  'for reference to _id for job'
-customerId | [{object}] (receipt.md#reference) | ...
+customerId | [string] (receipt.md#reference) | ...
 action | number | 'codeInt ex. 200 = add, 300 = move'          
-amount | [{object}] (receipt.md#reference) | ...
+amount | [number] (receipt.md#reference) | ...
 employeeName | string |  ชื่อลูกจ้าง          
 employeeId | string |  รหัสลูกจ้าง
                    
@@ -159,15 +155,12 @@ pos | number |  ยอดขายจากระบบ  cash only
 posEnding | number |  เงิน A
 actualEnding | number |  เงิน B
 diff | number |    'ส่วนต่างเงินในลิ้นชัก  A-B      ถ้าบวก เงินในระบบ เยอะกว่านับจริง  (เงินในลิ้นชักหาย)   ถ้าลบ   เงินในลิ้นชักเยอะกว่าที่คำนวนได้ในระบบ ( เงินได้รับเกิน)'
-    
-| Name | Type | Description
-| ----|----|-----------    
-withdraw | array [{object}] |  '...'
-> properties
+withdraw | [{array object}](receipt.md#withdraw) |  '...'
 
+### withdraw
 | Name | Type | Description
 | ----|----|----------- 
-type | string |  'add | withdraw'               
+type | string |  'add \| withdraw'               
 timestamp | [{object}](receipt.md#reference) | ...
 amount | [{object}](receipt.md#reference) | ...
 remark | string |  คอมเม้นต์
@@ -188,7 +181,7 @@ amount | number | 1500, -1500 ใส่เลข ลบถ้าหักออ�
 | ----|----|----------- 
 ex1| string | `...`
 
-### baseItem
+### Item
 | Name | Type | Description
 | ----|----|-----------  
 uuid\* | string   | รหัสสินค้า    
