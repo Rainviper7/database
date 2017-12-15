@@ -90,7 +90,7 @@ id | string | รหัสลูกจ้าง
 | Name | Type | Description
 | ----|----|-----------  
 table | string | โต๊ะลูกค้า
-info | [{object}] (receipt.md#infoobject) | ...
+info | [{object}](receipt.md#infoobject) | ...
              
 ### InfoObject
 | Name | Type | Description

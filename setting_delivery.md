@@ -3,7 +3,7 @@
 
 `* = required`
 
-###setting_delivery
+### setting_delivery
 | Name | Type | Description
 | ----|----|-----------
 branch | [{array object}](setting_delivery.md#branch) | สาขา 
