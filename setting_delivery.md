@@ -7,7 +7,7 @@
 | Name | Type | Description
 | ----|----|-----------
 branch | [{array object}](setting_delivery.md#branch) | สาขา 
-channel | [{array object}](setting_delivery.md#chanel) |  ช่องทาง
+channel | [{array object}](setting_delivery.md#channel) |  ช่องทาง
 delivery\_method | [{array object}](setting_delivery.md#delivery_method) | วิธีการจัดส่ง
 zone | [{array object}](setting_delivery.md#zone) |  พื้นที่
 
@@ -31,7 +31,7 @@ row | string | 1
 | Name | Type | Description
 | ----|----|-----------
 uuid\* | string | `flwf2f111`
-name | string | รูปแบบการจัดส่ง `วินมอไซ`
+name | string | ชื่อรูปแบบการจัดส่ง เช่น `วินมอไซ`
 row | string | 0
                                            
 ### zone
