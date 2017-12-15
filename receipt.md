@@ -40,7 +40,7 @@ amount | number | ค่าเงิน 1500, -1500 ใส่เลข ลบถ
 ### tags
 | Name | Type | Description
 | ----|----|----------- 
-| name | boolean | สถานะชื่อ #type   =  obj : { <$name> : true }
+| name | boolean | สถานะชื่อ
 
 ### addOn 
 | Name | Type | Description
@@ -101,7 +101,7 @@ comment | array of string |  " ['string', ...]"
 member | [{object}](receipt.md#member)| ลูกค้าสมาชิก        
 openTime | string |  เวลาเปิด??
 noOfPrintPreview | number |  จำนวนสั่งปริ้นพรีวิว
-addOn | [array object] (receipt.md#addon) |  ส่วนเพิ่มเติม
+addOn | [array object](receipt.md#addon) |  ส่วนเพิ่มเติม
 
 ### vat_obj                 
 | Name | Type | Description
