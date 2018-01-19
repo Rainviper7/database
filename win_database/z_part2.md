@@ -8,7 +8,7 @@
 #### departments_uuid6
 | Name | Type | Description
 | ----|----|-----------  
-{retailDepartment_uuid} | [{object}](z_part2.md#retailDepartment_uuid) |  retailDepartment uuid
+{retailDepartment_uuid} | [{object}](z_part2.md#retaildepartment_uuid) |  retailDepartment uuid
 
 #### retailDepartment_uuid
 | Name | Type | Description
@@ -28,7 +28,7 @@ uuid | string | `0y37Si1E`
 #### departments_uuid7
 | Name | Type | Description
 | ----|----|-----------  
-{retailGroups_uuid} | [{object}](z_part2.md#retailGroups_uuid) | uuid `6mKQ8rTJ`
+{retailGroups_uuid} | [{object}](z_part2.md#retailgroups_uuid) | uuid `6mKQ8rTJ`
 
 #### retailGroups_uuid
 | Name | Type | Description
@@ -49,7 +49,7 @@ uuid | string | `6mKQ8rTJ`
 #### departments_uuid8
 | Name | Type | Description
 | ----|----|-----------  
-{retailProducts_uuid} | [{object}](z_part2.md#retailProducts_uuid) | `09bxkhYx`
+{retailProducts_uuid} | [{object}](z_part2.md#retailproducts_uuid) | `09bxkhYx`
 
 #### retailProducts_uuid
 | Name | Type | Description
@@ -103,7 +103,7 @@ tel | sting | `0925684445`
 #### paymentType(departments_uuid9)
 | Name | Type | Description
 | ----|----|-----------  
-{paymentType_uuid} | [{object}](z_part2.md#accounting) |  `-Kq295xokOGFie07QPQw`
+{paymentType_uuid} | [{object}](z_part2.md#paymenttype_uuid) |  `-Kq295xokOGFie07QPQw`
 
 #### paymentType_uuid
 | Name | Type | Description
@@ -127,7 +127,7 @@ printVoidItemsReport | number | 2
 #### quickPayment(departments_uuid9)
 | Name | Type | Description
 | ----|----|-----------  
-{quickPayment_uuid} | [{object}](z_part2.md#quickPayment_uuid) |  `fffqfqq`
+{quickPayment_uuid} | [{object}](z_part2.md#quickpayment_uuid) |  `fffqfqq`
 
 #### quickPayment_uuid
 | Name | Type | Description

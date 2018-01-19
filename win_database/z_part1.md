@@ -19,7 +19,7 @@ row | number | หมายเลขแถวแสดงผล
 
 | Name | Type | Description
 | ----|----|-----------  
-{branchOverride_uuid} | [{object}] | ...
+{branchOverride_uuid} | [{object}](z_part1.md#branchOverride_uuid)  | ...
 
 #### branchOverride_uuid
 | Name | Type | Description
@@ -46,7 +46,7 @@ modeValue | number | จำนวนเงิน Baht หรือ %
 #### departmentGroups            
 | Name | Type | Description
 | ----|----|-----------  
-{departmentGroups_uuid} | [{object}](z_part1.md#departmentGroups_uuid) | uuid
+{departmentGroups_uuid} | [{object}](z_part1.md#departmentgroups_uuid) | uuid
 
 #### departmentGroups_uuid            
 | Name | Type | Description
@@ -91,7 +91,7 @@ price | number | ราคาtopping
 #### departments_uuid
 | Name | Type | Description
 | ----|----|-----------  
-{menuGroup_uuid} | [{object}](z_part1.md#menuGroup_uuid) | `lcAJh5kx`
+{menuGroup_uuid} | [{object}](z_part1.md#menugroup_uuid) | `lcAJh5kx`
 
 #### menuGroup_uuid
 | Name | Type | Description
@@ -187,7 +187,7 @@ items| [{object}](z_part1.md#expense_items) | expense items
 #### expense_items
 | Name | Type | Description
 |----|----|-----------  
-{expenseKey_uuid} | [{object}](z_part1.md#expenseKey_uuid) | `-KovK-QrAt6pZuHgP1pr`
+{expenseKey_uuid} | [{object}](z_part1.md#expensekey_uuid) | `-KovK-QrAt6pZuHgP1pr`
 
 #### expenseKey_uuid
 | Name | Type | Description
@@ -203,14 +203,14 @@ row | number | หมายเลขแถวแสดงผล
 #### departments_uuid4
 | Name | Type | Description
 |----|----|-----------  
-{permissionList_uuid} | [{object}](z_part1.md#permissionList_uuid) | `-KpxkyemXB75N0zDFTgg`
+{permissionList_uuid} | [{object}](z_part1.md#permissionlist_uuid) | `-KpxkyemXB75N0zDFTgg`
 
 #### permissionList_uuid
 | Name | Type | Description
 |----|----|-----------  
 name | string | `Manager`
-feature | [{object}](z_part1.md#featurepermissionList) | features ต่าง ๆ ที่ใช้ได้
-pos | [{object}](z_part1.md#pospermissionList) | ทำอะไรกับ pos ได้บ้าง
+feature | [{object}](z_part1.md#featurepermissionlist) | features ต่าง ๆ ที่ใช้ได้
+pos | [{object}](z_part1.md#pospermissionlist) | ทำอะไรกับ pos ได้บ้าง
 
 #### feature(permissionList)
 | Name | Type | Description
@@ -243,7 +243,7 @@ pos_void | boolean | true
 #### departments_uuid5
 | Name | Type | Description
 |----|----|-----------  
-{productPrintLabel_uuid} | [{object}](z_part1.md#productPrintLabel_uuid) | uuid ของ menu นั้น ๆ `ixZuvsOp`
+{productPrintLabel_uuid} | [{object}](z_part1.md#productprintlabel_uuid) | uuid ของ menu นั้น ๆ `ixZuvsOp`
 
 #### productPrintLabel_uuid
 | Name | Type | Description
