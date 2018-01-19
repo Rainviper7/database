@@ -1,97 +1,85 @@
-### expense_transactions
+### expense_transactions [{object}]
 >expense_transactions (รายการของรายจ่ายที่ถูกบันทึก)
+
 
 | Name | Type | Description
 | ----|----|-----------  
-let expense_transactions = [{
-    uuid: "1VCIGKGv",
-    amount: 20,
-    businessDate: "2017-10-18",
-    comment: "",
-    customerId: '3180',
-    dateTime: "2017-10-17T17:00:00.000Z",
-    flag: false,
-    group: "ค่าซ่อมอุปกรณ์",
-    groupKey: "-KokDxug302BOkdHYn6k",
-    item: "ปริ๊นเตอร์",
-    itemKey: "kfepofkopf2",
-    uuid: 'fkeofoe'//uuid ข้อง transaction นั้น ๆ
-
-}]
+uuid | string | `1VCIGKGv`
+amount | number | `20`
+businessDate | string |   `2017-10-18`
+comment | string | บันทึกข้อความ
+customerId | string |   `3180`
+dateTime | string |   `2017-10-17T17:00:00.000Z`
+flag | boolean |   `false`
+group | string |   ค่าซ่อมอุปกรณ์
+groupKey | string |   `-KokDxug302BOkdHYn6k`
+item | string |   `ปริ๊นเตอร์`
+itemKey | string |   `kfepofkopf2`
+uuid | string |  uuid ข้อง transaction นั้น ๆ  `fkeofoe`
 
 ### inventoryGroup
 >inventoryGroup (กลุ่มของ inventory)
 
 | Name | Type | Description
 | ----|----|-----------  
-let inventoryGroup = [{
-    "customerId": "3180",
-    "name": "ff23",
-    "row": 1,
-    "uuid": "XkORRIhJ" //uuid กลุ่ม
-}]
+customerId | string |   `3180`
+name | string |   `ff23`
+row | number | หมายเลขแถวแสดงผล
+uuid | string |  uuid กลุ่ม `XkORRIhJ`
 
-### inventory
+
+### inventory [{object}]
 >inventory (รายการ inventory)
 
 | Name | Type | Description
 | ----|----|-----------  
-let inventory = [{
-    "uuid": "mZMpRyey", //uuid invemtory    
-    "balance": 101, // จำนวนคงเหลือปัจจุบัน
-    "baseUnit": "can",  //หน่วยหลัก เช่น กระป๋อง
-    "converter": { //เก็บค่าของหน่วยต่าง ๆ
-        "Box": 100,//เช่น Pepsi 1 Box บรรจุ Pepsi 100 กระป๋อง
-        "can": 1,
-        "Pack": 12
-    },
-    "customerId": "3180",
-    "groupUuid": "f2eff2f211ccc",
-    "name": "Pepsi",
-    "recieveUnit": "Pack", //หน่วยรับ (สำหรับหน้า เพิ่มของเข้า stock)
-    "reportUnit": "Box", // หน่วยที่โชว์เวลาแสดงผล
-    "row": 0,
-    "safetyStock": 252, //จำนวน safety สำหรับแจ้งว่าของไกล้หมด
-    "safetyStockUnit": "Pack",
-    "safetyStockValue": "21",
-}]
+uuid | string |  uuid invemtory  `mZMpRyey` 
+balance | number | จำนวนคงเหลือปัจจุบัน `101`  
+baseUnit | string | หน่วยหลัก เช่น กระป๋อง `can`  
+converter | {object} |   เก็บค่าของหน่วยต่าง ๆ
+customerId | string |   `3180`
+groupUuid | string |   `f2eff2f211ccc`
+name | string | `Pepsi`
+recieveUnit | string | หน่วยรับ (สำหรับหน้า เพิ่มของเข้า stock)  `Pack` 
+reportUnit | string | หน่วยที่โชว์เวลาแสดงผล  `Box`
+row | number | หมายเลขแถวแสดงผล
+safetyStock | number | จำนวน safety สำหรับแจ้งว่าของไกล้หมด `252`
+safetyStockUnit | string |   `Pack`
+safetyStockValue | string |   `"21"`
 
-### InventoryTransaction
+#### converter(inventory)
+| Name | Type | Description
+| ----|----|-----------  
+Box | number |  เช่น Pepsi 1 Box บรรจุ Pepsi 100 กระป๋อง `100`
+can | number |   `1`
+Pack | number |   `12`
+
+### InventoryTransaction[{object}]
 >InventoryTransaction (ประวัติการเพิ่มลง stock)
 
 | Name | Type | Description
 | ----|----|-----------  
-let InventoryTransaction = [{
-    "amount": 48, //จำนวนสินค้าเหลือเก่า + จำนวนสินค้าใหม่ เช่น สินค้าเก่ามี 24 + สินค้าใหม่เพิ่มเข้ามา 24 = 48
-    "businessDay": "2017-09-16",
-    "customerId": "3180",
-    "dateTime": "2017-09-16T04:41:47.166Z",
-    "inputAmount": 24, //จำนวน สินค้าที่เพิ่มเข้า stock
-    "localTime": "2017-09-16T11:41:47+07:00",
-    "type": 4,
-    "uuid": "3Ms9RMUE"
-}]
+amount | number | จำนวนสินค้าเหลือเก่า + จำนวนสินค้าใหม่ เช่น สินค้าเก่ามี 24 + สินค้าใหม่เพิ่มเข้ามา 24 = 48 
+businessDay | string |   `2017-09-16`
+customerId | string |   `3180`
+dateTime | string |   `2017-09-16T04:41:47.166Z`
+inputAmount | number |จำนวน สินค้าที่เพิ่มเข้า stock    `24`
+localTime | string |   `2017-09-16T11:41:47+07:00`
+type | number |   4
+uuid | string | `3Ms9RMUE`
 
-### formula
+### formula[{object}]
 >formula (สูตรเมนูอาหาร)
 
 | Name | Type | Description
 | ----|----|-----------  
-let formula = [{
-    "customerId": "3180",
-    "formula": {
-        "mZMpRyey": 2 //uuid ของ inventory item
-    },
-    "uuid": "3rbWZixj"//uuid ของ menu item
-}]
+customerId | string |   `3180`
+formula | object | uuid ของ inventory item `mZMpRyey : 2`
+uuid | string | uuid ของ menu item `3rbWZixj`
 
-### ToppingFormula
+### ToppingFormula[{object}]
 | Name | Type | Description
-| ----|----|-----------  
-let ToppingFormula = [{
-    "customerId": "3180",
-    "formula": {
-        "YnNdiQoz": 4 //uuid ของ inventory item
-    },
-    "uuid": "MoIfxWPu" //uuid ของ topping item
-}] 
+| ----|----|----------- 
+customerId | string |   `3180`
+formula | object | uuid ของ inventory item `YnNdiQoz : 4` 
+uuid | string |   uuid ของ topping item `MoIfxWPu`
