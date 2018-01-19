@@ -114,7 +114,7 @@ printer | [{object}](z_part1.md#printer) | เลข printer ที่ active `"
 name | string | ชื่อ menu items `ข้าวผัดกระเพาหมู`
 price | number | ราคา menu items
 row | number | หมายเลขแถวแสดงผล
-subItems | [{object}](z_part1.md#subItem_uuid) | uuid ของ menu sub-items `EsumME0B`     
+subItems | [{object}](z_part1.md#subitem_uuid) | uuid ของ menu sub-items `EsumME0B`     
 uuid | string | uuid ของ menu items `3d9DWZEE`
 
 
