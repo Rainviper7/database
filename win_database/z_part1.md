@@ -25,21 +25,21 @@ row | number | หมายเลขแถวแสดงผล
 
 | Name | Type | Description
 | ----|----|-----------  
-{branchOverride_uuid} | {object} | ...
+{branchOverride_uuid} | [{object}] | ...
 
 #### branchOverride_uuid
 | Name | Type | Description
 | ----|----|-----------  
-accounting | {object} | ...
-departmentGroups | {object} | ...
-departments | {object} | ...
-promotion | {object} | ...
-topping | {object} | ...
+accounting | [{object}](z_part1.md#accounting) | ...
+departmentGroups | [{object}](z_part1.md#departmentgroups)  | ...
+departments | [{object}](z_part1.md#departments)  | ...
+promotion | [{object}](z_part1.md#promotion)  | ...
+topping | [{object}](z_part1.md#topping) | ...
 
 #### accounting
 | Name | Type | Description
 | ----|----|-----------  
-{accounting_uuid} | {object} | uuid
+{accounting_uuid} | [{object}](z_part1.md#accounting_uuid) | uuid
 
 #### accounting_uuid
 | Name | Type | Description
@@ -52,7 +52,7 @@ modeValue | number | จำนวนเงิน Baht หรือ %
 #### departmentGroups            
 | Name | Type | Description
 | ----|----|-----------  
-{departmentGroups_uuid} | {object} | uuid
+{departmentGroups_uuid} | [{object}](z_part1.md#departmentGroups_uuid) | uuid
 
 #### departmentGroups_uuid            
 | Name | Type | Description
@@ -62,7 +62,7 @@ printer | {object boolean} | เลข printer ที่ active `3: true`
 #### departments
 | Name | Type | Description
 | ----|----|-----------  
-{departments_uuid} | {object} | uuid ของรายการเมนูนั้น ๆ
+{departments_uuid} | [{object}](z_part1.md#departments_uuid) | uuid ของรายการเมนูนั้น ๆ
 
 #### departments_uuid
 | Name | Type | Description
@@ -72,7 +72,7 @@ price | number | ราคา
 #### promotion
 | Name | Type | Description
 | ----|----|-----------  
-{promotion_key} | {object} | key ของ promotion นั้น ๆ
+{promotion_key} | [{object}](z_part1.md#promotion_key) | key ของ promotion นั้น ๆ
 
 #### promotion_key
 | Name | Type | Description
@@ -82,7 +82,7 @@ isActive | boolean | กำลังเปิดใช้โปรโมชั�
 #### topping
 | Name | Type | Description
 | ----|----|-----------  
-{topping_uuid} | {object} | uuid ของ topping นั้น ๆ 
+{topping_uuid} | [{object}](z_part1.md#topping_uuid) | uuid ของ topping นั้น ๆ 
 
 #### topping_uuid
 | Name | Type | Description
@@ -92,27 +92,27 @@ price | number | ราคาtopping
 ### departments (menu เมนูอาหาร)
 | Name | Type | Description
 | ----|----|-----------  
-{departments_uuid} | {object} | `3180`
+{departments_uuid} | [{object}](z_part1.md#departments_uuid) | `3180`
 
 #### departments_uuid
 | Name | Type | Description
 | ----|----|-----------  
-{menuGroup_uuid} | {object} | `lcAJh5kx`
+{menuGroup_uuid} | [{object}](z_part1.md#menuGroup_uuid) | `lcAJh5kx`
 
 #### menuGroup_uuid
 | Name | Type | Description
 | ----|----|-----------  
-items | {object} | เมนู?
+items | [{object}](z_part1.md#itemsmenugroup) | เมนู?
 row | number | หมายเลขแถวแสดงผล
 type | string | `dorKIohG`
 uuid | string | `lcAJh5kx`
 
-#### items
+#### items(menuGroup)
 | Name | Type | Description
 | ----|----|-----------  
-{item_uuid}| {object}| uuid ของ menu items `3d9DWZEE`
+{item_uuid}| [{object}](z_part1.md#item_uuid)| uuid ของ menu items `3d9DWZEE`
 name | string | ชื่อ ของ menu group `ข้าวแกง`
-printer | {object} | เลข printer ที่ active `"3": true`
+printer | [{object}](z_part1.md#printer) | เลข printer ที่ active `"3": true`
 
 #### item_uuid
 | Name | Type | Description
@@ -120,7 +120,7 @@ printer | {object} | เลข printer ที่ active `"3": true`
 name | string | ชื่อ menu items `ข้าวผัดกระเพาหมู`
 price | number | ราคา menu items
 row | number | หมายเลขแถวแสดงผล
-subItems | {object} | uuid ของ menu sub-items `EsumME0B`     
+subItems | [{object}](z_part1.md#subItem_uuid) | uuid ของ menu sub-items `EsumME0B`     
 uuid | string | uuid ของ menu items `3d9DWZEE`
 
 
@@ -140,12 +140,12 @@ uuid | string | uuid ของ menu sub-items `EsumME0B`
 ### department type (ชนิดของ menu อาหาร)
 | Name | Type | Description
 | ----|----|-----------  
-{departments_uuid2} | {object} | `3180`
+{departments_uuid2} | [{object}](z_part1.md#departments_uuid2) | `3180`
 
 #### departments_uuid2
 | Name | Type | Description
 | ----|----|-----------
-{departmenttype_uuid} | {object} |  `SidItSST`
+{departmenttype_uuid} | [{object}](z_part1.md#departmenttype_uuid) |  `SidItSST`
 
 #### departmenttype_uuid
 | Name | Type | Description
@@ -158,12 +158,12 @@ uuid| string | `SidItSST`
 ### employees พนักงาน
 | Name | Type | Description
 | ----|----|-----------
-{departments_uuid3} | {object} | `3180`
+{departments_uuid3} | [{object}](z_part1.md#departments_uuid3) | `3180`
 
 #### departments_uuid3
 | Name | Type | Description
 | ----|----|-----------
-{employees_uuid} | {object} | `-KpxeEJBgv0oYG9fmssz`
+{employees_uuid} | [{object}](z_part1.md#employees_uuid) | `-KpxeEJBgv0oYG9fmssz`
 
 #### employees_uuid
 | Name | Type | Description
@@ -176,24 +176,24 @@ remark | string | บันทึกข้อความ
 ### expense รายจ่าย
 | Name | Type | Description
 |----|----|-----------  
-{departments_uuid4} | {object} | `3180`
+{departments_uuid4} | [{object}](z_part1.md#departments_uuid4) | `3180`
 
 #### departments_uuid4
 | Name | Type | Description
 |----|----|-----------  
 name| ค่าซ่อมอุปกรณ์|ชื่อกลุ่ม expense นั้น ๆ
 row | number | หมายเลขแถวแสดงผล
-{expense key} | {object} | expense key `-KokDxug302BOkdHYn6k`
+{expense_key} | [{object}](z_part1.md#expensekey) | expense key `-KokDxug302BOkdHYn6k`
 
-#### expense key
+#### expense_key
 | Name | Type | Description
 |----|----|-----------  
-items| {object} | expense items
+items| [{object}](z_part1.md#expense_items) | expense items
 
-#### expense items
+#### expense_items
 | Name | Type | Description
 |----|----|-----------  
-{expenseKey_uuid} | {object} | `-KovK-QrAt6pZuHgP1pr`
+{expenseKey_uuid} | [{object}](z_part1.md#expenseKey_uuid) | `-KovK-QrAt6pZuHgP1pr`
 
 #### expenseKey_uuid
 | Name | Type | Description
@@ -204,19 +204,19 @@ row | number | หมายเลขแถวแสดงผล
 ### permissionList
 | Name | Type | Description
 |----|----|-----------  
-{departments_uuid4} | {object} | `3180`
+{departments_uuid4} | [{object}](z_part1.md#departments_uuid4) | `3180`
 
 #### departments_uuid4
 | Name | Type | Description
 |----|----|-----------  
-{permissionList_uuid} | {object} | `-KpxkyemXB75N0zDFTgg`
+{permissionList_uuid} | [{object}](z_part1.md#permissionList_uuid) | `-KpxkyemXB75N0zDFTgg`
 
 #### permissionList_uuid
 | Name | Type | Description
 |----|----|-----------  
 name | string | `Manager`
-feature | {object} | features ต่าง ๆ ที่ใช้ได้
-pos | {object} | ทำอะไรกับ pos ได้บ้าง
+feature | [{object}](z_part1.md#featurepermissionList) | features ต่าง ๆ ที่ใช้ได้
+pos | [{object}](z_part1.md#pospermissionList) | ทำอะไรกับ pos ได้บ้าง
 
 #### feature(permissionList)
 | Name | Type | Description
@@ -244,24 +244,21 @@ pos_void | boolean | true
 
 | Name | Type | Description
 |----|----|-----------  
-{departments_uuid5} | {object} | `3180`
+{departments_uuid5} | [{object}](z_part1.md#departments_uuid5) | `3180`
         
 #### departments_uuid5
 | Name | Type | Description
 |----|----|-----------  
-{productPrintLabel_uuid} | {object} | uuid ของ menu นั้น ๆ `ixZuvsOp`
+{productPrintLabel_uuid} | [{object}](z_part1.md#productPrintLabel_uuid) | uuid ของ menu นั้น ๆ `ixZuvsOp`
 
 #### productPrintLabel_uuid
 | Name | Type | Description
 |----|----|-----------  
 kitchenName | string | `Kaow mun kai`
 secondName | string | `Kaow MKai`
-comboList | {object} | ... 
+comboList | [{object}](z_part1.md#combolist) | ... 
 
 #### combolist
 | Name | Type | Description
 |----|----|-----------  
 {menu_uuid}| object | uuid ของ menu นั้น ๆ `tM8hA5NG : 1`
-
-
-

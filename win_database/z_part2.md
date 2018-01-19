@@ -3,12 +3,12 @@
 
 | Name | Type | Description
 | ----|----|-----------  
-{departments_uuid6} | {object} | uuid สาขาแม่ `3181`
+{departments_uuid6} | [{object}](z_part2.md#departments_uuid6) | uuid สาขาแม่ `3181`
 
 #### departments_uuid6
 | Name | Type | Description
 | ----|----|-----------  
-{retailDepartment_uuid} | {object} |  retailDepartment uuid
+{retailDepartment_uuid} | [{object}](z_part2.md#retailDepartment_uuid) |  retailDepartment uuid
 
 #### retailDepartment_uuid
 | Name | Type | Description
@@ -23,12 +23,12 @@ uuid | string | `0y37Si1E`
 
 | Name | Type | Description
 | ----|----|-----------  
-{departments_uuid7} | {object} | uuid สาขาแม่ `3181`
+{departments_uuid7} | [{object}](z_part2.md#departments_uuid7) | uuid สาขาแม่ `3181`
 
 #### departments_uuid7
 | Name | Type | Description
 | ----|----|-----------  
-{retailGroups_uuid} | {object} | uuid `6mKQ8rTJ`
+{retailGroups_uuid} | [{object}](z_part2.md#retailGroups_uuid) | uuid `6mKQ8rTJ`
 
 #### retailGroups_uuid
 | Name | Type | Description
@@ -44,12 +44,12 @@ uuid | string | `6mKQ8rTJ`
 
 | Name | Type | Description
 | ----|----|-----------  
-{departments_uuid8} | {object} | uuid สาขาแม่ `3181`
+{departments_uuid8} | [{object}](z_part2.md#departments_uuid8) | uuid สาขาแม่ `3181`
 
 #### departments_uuid8
 | Name | Type | Description
 | ----|----|-----------  
-{retailProducts_uuid} | {object} | `09bxkhYx`
+{retailProducts_uuid} | [{object}](z_part2.md#retailProducts_uuid) | `09bxkhYx`
 
 #### retailProducts_uuid
 | Name | Type | Description
@@ -70,20 +70,20 @@ uuid | string | `09bxkhYx`
 
 | Name | Type | Description
 | ----|----|-----------  
-{departments_uuid9} | {object} | uuid สาขาลูก `3180`
+{departments_uuid9} | [{object}](z_part2.md#departments_uuid9) | uuid สาขาลูก `3180`
 
 #### departments_uuid9      
 | Name | Type | Description
 | ----|----|-----------  
 addOn | object array | รายการ addOn ที่กำลัง active `[3Ml3kKEE,4J7JWDCa]`
-member | {object} |  ข้อมูล member
-option | {object} |  option ต่าง ๆ
-paymentType | {object} |   รูปแบการชำระเงิน
-printerSetting | {object} |  ตั้งค่าปริ๊นเตอร์
-quickPayment | {object} |  quickPayment
-receipt | {object} |  { ใบเสร็จ?
+member | [{object}](z_part2.md#memberdepartments_uuid9) |  ข้อมูล member
+option | [{object}](z_part2.md#optiondepartments_uuid9) |  option ต่าง ๆ
+paymentType | [{object}](z_part2.md#paymentTypedepartments_uuid9) |   รูปแบการชำระเงิน
+printerSetting | [{object}](z_part2.md#printerSettingdepartments_uuid9) |  ตั้งค่าปริ๊นเตอร์
+quickPayment | [{object}](z_part2.md#quickPaymentdepartments_uuid9) |  quickPayment
+receipt | [{object}](z_part2.md#receiptdepartments_uuid9) |  { ใบเสร็จ?
 tables | object |  { โต๊ะ `A : 20,` //Zone มี โต๊ะ 20 โต๊ะ
-timer | {object} |  { จำกัดเวลารับประทานอาหาร
+timer | [{object}](z_part2.md#timerdepartments_uuid9) |  { จำกัดเวลารับประทานอาหาร
 
 #### member(departments_uuid9)
 | Name | Type | Description
@@ -103,9 +103,9 @@ tel | sting | `0925684445`
 #### paymentType(departments_uuid9)
 | Name | Type | Description
 | ----|----|-----------  
-{paymentType_uuid} | {object} |  `-Kq295xokOGFie07QPQw`
+{paymentType_uuid} | [{object}](z_part2.md#accounting) |  `-Kq295xokOGFie07QPQw`
 
-#### paymentType(departments_uuid9)
+#### paymentType_uuid
 | Name | Type | Description
 | ----|----|-----------  
 is_creditcard | boolean | เป็น credit card ?
@@ -127,9 +127,9 @@ printVoidItemsReport | number | 2
 #### quickPayment(departments_uuid9)
 | Name | Type | Description
 | ----|----|-----------  
-{quickPayment_uuid} | {object} |  `fffqfqq`
+{quickPayment_uuid} | [{object}](z_part2.md#quickPayment_uuid) |  `fffqfqq`
 
- #### quickPayment_uuid
+#### quickPayment_uuid
 | Name | Type | Description
 | ----|----|-----------               
 color | number |  0, //เลือกสี
@@ -152,7 +152,7 @@ showDateTime | number | `0 = date-time,1 = date,2 = none`
 #### timer(departments_uuid9)
 | Name | Type | Description
 | ----|----|-----------  
-{timer_uuid} | {object} | `-Kr19eQwyGLP0WNBvI5r`
+{timer_uuid} | [{object}](z_part2.md#timer_uuid) | `-Kr19eQwyGLP0WNBvI5r`
 
 #### timer_uuid
 | Name | Type | Description
@@ -164,17 +164,17 @@ row | number | หมายเลขแถวแสดงผล
 ### topping
 | Name | Type | Description
 | ----|----|-----------  
-{departments_uuid10} | {object} | uuid สาขาลูก `3180`
+{departments_uuid10} | [{object}](z_part2.md#departments_uuid10) | uuid สาขาลูก `3180`
 
 #### departments_uuid10
 | Name | Type | Description
 | ----|----|-----------  
-{topping_uuid} | {object} |  uuid กลุ่มของ topping   `QV0dqh2r` 
+{topping_uuid} | [{object}](z_part2.md#topping_uuid) |  uuid กลุ่มของ topping   `QV0dqh2r` 
 
 #### topping_uuid
 | Name | Type | Description
 | ----|----|-----------  
-items | {object} | items ในกลุ่มของ topping
+items | [{object}](z_part2.md#itemstopping) | items ในกลุ่มของ topping
 name | string | `Chips`
 row | number | หมายเลขแถวแสดงผล
 uuid |  | `QV0dqh2r`
@@ -182,7 +182,7 @@ uuid |  | `QV0dqh2r`
 #### items(Topping)
 | Name | Type | Description
 | ----|----|-----------  
- itemsTopping_uuid} | {object} |   uuid items ในกลุ่มของ topping `kjBonvfw`
+ itemsTopping_uuid} | [{object}](z_part2.md#itemstopping_uuid) |   uuid items ในกลุ่มของ topping `kjBonvfw`
 
 #### itemsTopping_uuid
 name | string | `Lays`
@@ -193,7 +193,7 @@ uuid | string | `kjBonvfw`
 ### user
 | Name | Type | Description
 | ----|----|-----------  
-{user_uuid} | {object} | uuid user    `A4hVJYUQrQfnzpfhmnii6S7td0m1`
+{user_uuid} | [{object}](z_part2.md#user_uuid) | uuid user    `A4hVJYUQrQfnzpfhmnii6S7td0m1`
 
 #### user_uuid
 | Name | Type | Description

@@ -1,7 +1,6 @@
 ### expense_transactions [{object}]
 >expense_transactions (รายการของรายจ่ายที่ถูกบันทึก)
 
-
 | Name | Type | Description
 | ----|----|-----------  
 uuid | string | `1VCIGKGv`
@@ -36,7 +35,7 @@ uuid | string |  uuid กลุ่ม `XkORRIhJ`
 uuid | string |  uuid invemtory  `mZMpRyey` 
 balance | number | จำนวนคงเหลือปัจจุบัน `101`  
 baseUnit | string | หน่วยหลัก เช่น กระป๋อง `can`  
-converter | {object} |   เก็บค่าของหน่วยต่าง ๆ
+converter | [{object}](z_part3.md#converterinventory) |   เก็บค่าของหน่วยต่าง ๆ
 customerId | string |   `3180`
 groupUuid | string |   `f2eff2f211ccc`
 name | string | `Pepsi`
