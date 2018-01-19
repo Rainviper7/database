@@ -3,12 +3,6 @@
 
 `* = required`
 
-### infoRoot
-| Name | Type | Description
-| ----|----|-----------  
-table | string | โต๊ะลูกค้า
-info | [{object}](info.md#infoobject) | ...
-
 ### accounting
 | Name | Type | Description
 |----|----|-----------  
