@@ -198,9 +198,9 @@ row | number | หมายเลขแถวแสดงผล
 ### permissionList
 | Name | Type | Description
 |----|----|-----------  
-{departments_uuid4} | [{object}](z_part1.md#departments_uuid4) | `3180`
+{departments_uuid5} | [{object}](z_part1.md#departments_uuid5) | `3180`
 
-#### departments_uuid4
+#### departments_uuid5
 | Name | Type | Description
 |----|----|-----------  
 {permissionList_uuid} | [{object}](z_part1.md#permissionlist_uuid) | `-KpxkyemXB75N0zDFTgg`
@@ -238,9 +238,9 @@ pos_void | boolean | true
 
 | Name | Type | Description
 |----|----|-----------  
-{departments_uuid5} | [{object}](z_part1.md#departments_uuid5) | `3180`
+{departments_uuid6} | [{object}](z_part1.md#departments_uuid6) | `3180`
         
-#### departments_uuid5
+#### departments_uuid6
 | Name | Type | Description
 |----|----|-----------  
 {productPrintLabel_uuid} | [{object}](z_part1.md#productprintlabel_uuid) | uuid ของ menu นั้น ๆ `ixZuvsOp`
