@@ -5,19 +5,9 @@
 
 | Name | Type | Description
 |----|----|-----------  
-{departments_uuid6} | [{object}](z_part1.md#departments_uuid6) | `3180`
-        
-#### departments_uuid6
-| Name | Type | Description
-|----|----|-----------  
-{productPrintLabel_uuid} | [{object}](z_part1.md#productprintlabel_uuid) | uuid ของ menu นั้น ๆ `ixZuvsOp`
-
-#### productPrintLabel_uuid
-| Name | Type | Description
-|----|----|-----------  
 kitchenName | string | `Kaow mun kai`
 secondName | string | `Kaow MKai`
-comboList | [{object}](z_part1.md#combolist) | ... 
+comboList | [{comboList}](pdprintlabel_comboset.md#combolist) | ... 
 
 #### combolist
 | Name | Type | Description
