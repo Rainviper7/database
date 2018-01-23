@@ -17,12 +17,7 @@ note | string| บันทึกเพิ่มเติม
 table | string | โต๊ะลูกค้า
 toKitchen | boolean | send job to printer     
 device | string| เครื่องที่ใช้ในการสั่ง
-items | [{object}](job.md#items) | item menu
-
-### items
-| Name | Type | Description
-| ----|----|-----------  
-node | [array object](job.md#item)  | item menu
+items | [[ {Item} ]](job.md#item) | item menu
 
 ### Item
 | Name | Type | Description
@@ -35,7 +30,7 @@ extendedPrice | number | n/a
 discount | number | ส่วนลด
 discountedPrice | number| ส่วนลด
 comment | string | คอมเม้น
-toppings | [array object](job.md#topping) | ออฟชั่นเพิ่มเติมของอาหาร
+toppings | [ [ { Topping} ] ](job.md#topping) | ออฟชั่นเพิ่มเติมของอาหาร
 
 ### topping
 | Name | Type | Description

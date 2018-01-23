@@ -4,10 +4,10 @@
 `* = required`
 
 ### infoRoot
-| Name | Type | Description
-| ----|----|-----------  
-table | string | โต๊ะลูกค้า
-info | [{object}](info.md#infoobject) | ...
+
+$root/info/$3180/$table/{infoObject}
+
+ 
              
 ### InfoObject
 | Name | Type | Description
@@ -19,3 +19,4 @@ member | [{object}](member.md#member)| ลูกค้าสมาชิก
 openTime | string |  เวลาเปิด??
 noOfPrintPreview | number |  จำนวนสั่งปริ้นพรีวิว
 addOn | [array object](receipt.md#addon) |  ส่วนเพิ่มเติม
+table | string | table
