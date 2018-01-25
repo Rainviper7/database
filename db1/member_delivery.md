@@ -13,8 +13,8 @@ birthDate | datetime | วันเกิด
 firstName | string | ชื่อ
 lastName | string | นามสกุล
 gender | string | เพศ
-channel | [{object}](member_delivery.md#channel) | ช่องทางติดต่อ
-zone | [{object}](member_delivery.md#zone) | โซน ที่อยุ่
+channel | [{channel}](member_delivery.md#channel) | ช่องทางติดต่อ
+zone | [{zone}](member_delivery.md#zone) | โซน ที่อยุ่
 note | string | บันทึกข้อความ
 tel | string | เบอร์โทศัพท์
 

@@ -3,15 +3,6 @@
 
 `* = required`
 
-### RunningMode 
-| Name | Type | Description
-| ----|----|-----------  
-shift | string | กะ/เวร ที่เข้าทำงาน
-businessDay | string | วัน???  
-currentIdBill | string | idบิลปัจจุบัน
-currentEmployee | [{object}](employee.md#employeeobj) | ' people from WIN'
-cashierMode | string | '0= cashier, 1= termial, 2= 2nd cashier'
-
 ### DrawerLogs
 | Name | Type | Description
 | ----|----|----------- 
@@ -22,7 +13,7 @@ pos | number |  ยอดขายจากระบบ  cash only
 posEnding | number |  เงิน A
 actualEnding | number |  เงิน B
 diff | number |    'ส่วนต่างเงินในลิ้นชัก  A-B      ถ้าบวก เงินในระบบ เยอะกว่านับจริง  (เงินในลิ้นชักหาย)   ถ้าลบ   เงินในลิ้นชักเยอะกว่าที่คำนวนได้ในระบบ ( เงินได้รับเกิน)'
-withdraw | [{array object}](setting.md#withdraw) |  '...'
+withdraw | [{withdraw}](setting.md#withdraw) |  '...'
 
 ### withdraw
 | Name | Type | Description

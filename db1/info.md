@@ -5,7 +5,7 @@
 
 ### infoRoot
 
-$root/info/$3180/$table/{infoObject}
+$root/info/$3180/$table/[{infoObject}](info.md#infoobject)
 
  
              

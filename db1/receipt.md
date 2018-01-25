@@ -18,10 +18,10 @@ shift | string | กะ/เวร ที่เข้าทำงาน
 | isDeleted  | boolean | สถานะการลบรายการ
 | deleteRemark | boolean| สถานะการลบบันทึกเพิ่มเติม 
 | table | string| หมายเลขโต๊ะลูกค้า
-| addOn | [{object}](receipt.md#addon) | ...
+| addOn | [{addOn}](receipt.md#addon) | ...
 | guest   | number  | จำนวนลูกค้า  
 | openTime  | datetime | เวลาเปิดร้าน    
-| items | [array object](job.md#item) | สินค้า 
+| items | [{item}](job.md#item) | สินค้า 
 | subTotal | number | ราคาสินค้าจริง ยังไม่ลดตัวสินค้า 
 | discountItems | number  |  ลดราคาสินค้า
 |beforeVat | number| ราคาก่อนคิดภาษี      
