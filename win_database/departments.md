@@ -23,7 +23,7 @@ printer | object | เลข printer ที่ active `{"1": false,"3": true}`
 name | string | ชื่อ menu items `ข้าวผัดกระเพาหมู`
 price | number | ราคา menu items
 row | number | หมายเลขแถวแสดงผล
-subItems | [{object}](departments.md#subitem_uuid) | uuid ของ menu sub-items `EsumME0B`     
+subItems | [{subItem_uuid}](departments.md#subitem_uuid) | uuid ของ menu sub-items `EsumME0B`     
 uuid | string | uuid ของ menu items `3d9DWZEE`
 
 #### subItem_uuid
